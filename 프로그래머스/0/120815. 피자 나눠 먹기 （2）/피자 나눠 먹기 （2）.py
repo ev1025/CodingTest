@@ -1,4 +1,4 @@
 def solution(n):
-    for i in range(n,n*61):
-        if i%6==0 and i%n==0:
-            return i//6
+    for i in range(1,n+1):
+        if (i*6)%n==0:
+            return i
