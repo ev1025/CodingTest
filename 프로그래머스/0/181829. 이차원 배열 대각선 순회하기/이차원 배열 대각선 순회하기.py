@@ -1,4 +1,2 @@
 def solution(board, k):
-    i = len(board)
-    j = len(board[0])
-    return sum([board[n][s] for n in range(i) for s in range(j) if s+n<=k])
+    return sum([board[n][s] for n in range(len(board)) for s in range(len(board[0])) if s+n<=k])
